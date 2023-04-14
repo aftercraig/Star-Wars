@@ -4,6 +4,83 @@
 	box-sizing: border-box;
 }
 
-.heading {
-    
+@font-face {
+	font-family: 'Star Jedi_Cyrillic';
+	src: url('./fonts/star_jedi_cyrillic.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/star_jedi_cyrillic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/star_jedi_cyrillic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/star_jedi_cyrillic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/star_jedi_cyrillic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/star_jedi_cyrillic.svg#star_jedi_cyrillic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    background: linear-gradient(-90deg, #000000, #313131);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; 
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+header {
+    height: 100px;
+}
+
+h1 {
+    font-family: 'Star Jedi_Cyrillic';
+    color: #ffee00;
+    text-shadow: 4px 4px #70631b;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Star Jedi_Cyrillic';
+    padding-top: 40px;
+    color: #ffee00;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Star Jedi_Cyrillic';
+    padding-top: 10px;
+    color: #ffee00;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.loading {
+    font-family: 'Star Jedi_Cyrillic';
+    padding-top: 60px;
+    color: #ffee00;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    font-family: 'Star Jedi_Cyrillic';
+    padding-top: 60px;
+    color: #ffee00;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    height: 100px;
 }
